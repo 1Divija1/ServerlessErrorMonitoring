@@ -1,0 +1,4 @@
+The concurrent error can be corrected in either of the following ways:
+1) Increase the reserved concurrency on the lambda GUI console.
+Select the function --> Configuration --> Concurrency --> Increase reserved concurrency
+2) Make sure that we are not invoking a function more than the reserved concurrency allowed. Making sure that previous instances of the function have terminated execution, are not in pending state etc. 

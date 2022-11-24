@@ -1,0 +1,6 @@
+The AccessDeniedException can be corrected by assigning the roles and policies to the parent function that is calling the child function.
+This error is resolved on the AWS IAM (Identity and Access Management) GUI console. 
+The first step is to define the policies. 
+The next step is to bring the policies together in a common role.
+And the third step is to enable the parent function with the newly created role so that it can call the child function successfully.
+While assigning, both resouce and identity based policies for the child function must be included in the role.
